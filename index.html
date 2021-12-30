@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com"> 
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+      <script src="highlight.min.js"></script> 
+      <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+      <script>hljs.initHighlightingOnLoad();</script>
+      <script>hljs.highlightAll();</script>
+      <script type="text/javascript" src="app.js"></script>
+    <title>Maria Latysheva Front-End Developer</title>
+  </head>    
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#skills">IT skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#examples">Code Examples</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact-info">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main >
+      <div class="jumbotron">
+          <h1>Maria Latysheva</h1>
+          <h2>I am a Front-End Developer</h2>
+          <a href="mailto:mlatysheva@gmail.com" class="btn btn-large btn-block btn-info">Contact me</a>   
+      </div>
+
+      <!-- Container to keep photo, contact, it skills and languages -->
+      <div class="wrapper">
+        <aside>
+          <section class="contact-block">
+            <div class="contacts" >
+              <span class="anchor" id="contact-info"></span>
+              <h3 >Contact info</h3>
+              <ul>
+                <li>Munich, 81377, Germany</li>
+                <li>Tel. +XX XXX XXX XXX</li>
+                <li>E-mail: xxxxxxxxx@gmail.com</li>
+                <li><a href="https://www.linkedin.com/in/maria-latysheva-21003615/">LinkedIn</a></li>
+                <li><a href="https://github.com/mlatysheva">GitHub</a></li>
+              </ul>
+            </div>
+            <figure class="photo">
+              <img src="./IMG_5266.JPG" alt="photo of Maria" width="200">
+            </figure>          
+          </section> <!-- end of Contact Block -->
+
+          <div class="it-skills">
+            <span class="anchor" id="skills"></span>
+            <h4>IT skills</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript and Node.js</li>
+              <li>Python, incl. NumPy, Pandas, Matplotlib</li>
+              <li>SQL</li>
+              <li>Java</li>
+              <li>Git and Github</li>
+              <li>Webpack</li>
+            </ul>
+          </div>
+          <div class="languages">
+            <h4>Languages</h4>
+            <ul>
+              <li>Russian native</li>
+              <li>English C2</li>
+              <li>German B2</li>
+              <li>Spanish B1</li>
+            </ul>
+          </div>
+        </aside>   
+
+        
+        <!-- Container to keep main content: About, Courses & Education, Projects, Code Example and Job Background -->
+        <section class="content">        
+          <div>
+            <span class="anchor" id="about-me"></span>
+            <h3>About me</h3>
+            <blockquote>
+              I am a self-taught IT enthusiast. In 2020, I completed Front-End Developer and Data Analyst nanodegree courses 
+              at <a href="https://udacity.com">udacity.com</a>. During the studies, I completed a number of <a href="#.projects">projects</a> in Front End and Data Analysis. 
+              You can see them on <a href="https://github.com/mlatysheva">my GitHub account</a>. 
+              I am currently taking the Javascript/Front-End Development course at <a href="https://rs.school">Rolling Scopes School</a>.             </blockquote> 
+          </div>
+
+          <span class="anchor" id="projects"></span>
+          <h3>Example projects</h3> 
+          <div class="projects">            
+            <div class="project-card">                
+              <h4>Travel App</h4>
+              <figure>
+                <p><img src="images/Travel-Planner-App.png" alt="screenshot of the travel app" /></p>
+                <figcaption><a href="https://mlatysheva.github.io/udacity_capstone_travel_app/" target="_blank">See the full project</a></figcaption>
+              </figure>
+            </div>
+            <div class="project-card">
+              <h4>Weather Journal App</h4>
+              <figure>
+                <p><img src="images/Weather-Journal-App.png" alt="screenshot of the Weather Journal App" /></p>
+                <figcaption><a href="https://mlatysheva.github.io/udacity_weather_journal_app/" target="_blank">See the full project</a></figcaption>
+              </figure>
+            </div> 
+            <div class="project-card">
+              <h4>Data Visualisation</h4>
+              <figure>
+                <p><img src="images/Data-Visualisation-Project.png" alt="screenshot of the data visualisation project" /></p>
+                <figcaption><a href="https://mlatysheva.github.io/udacity_DAND_data_visualisation_project/" target="_blank">See the full project</a></figcaption>
+              </figure>
+            </div>
+            <div class="project-card">
+              <h4>Gap Minder Dataset Analysis</h4>
+              <figure>
+                <p><img src="images/Investigate-GAP-Minder-Dataset.png" alt="screenshot of the GAP Minder dataset analysis" /></p>
+                <figcaption><a href="https://mlatysheva.github.io/udacity_investigate_Gapminder_dataset/investigate_Gapminder_dataset.html" target="_blank">See the full project</a></figcaption>
+              </figure>
+            </div> 
+          </div> <!-- end of Projects -->
+
+          <div>
+            <span class="anchor" id="education"></span>
+            <h3>Courses and education</h3>
+            <p><span>07-2021 – present time </span> <span>Rolling Scopes School </span> <span>Javascript/Front-End Development Course</span> </p>
+            <p><span>04-2021 – present time </span> <span>Fern University Hagen, Germany </span> <span>Business Informatics, 1st year</span> </p>
+            <p><span>2020-05 – 2020-10 </span> <span>Udacticy.com </span> <span>Data Analyst Nanodegree</span></p>
+            <p><span>2019-12 – 2020-05 </span> <span> Udacticy.com </span> <span> Front-End Developer Nanodegree </span></p>
+            <p><span>2002-08 – 2003-06 </span> <span> Moscow State University </span> <span>Applied Math & Informatics </span></p>
+            <p><span>1996-08 – 2001-06 </span> <span> Moscow State Linguistic University </span> <span>World Economics (Diploma with honours)</span></p>
+
+          </div> <!-- end of Courses -->
+
+          <span class="anchor" id="examples"></span>
+          <h4>Examples of code</h4>
+          <div class="code-examples">
+            <div>
+              <h5>Java</h5>
+              <pre>
+                <code class="java">import java.util.Arrays;
+                  public class StringSplit {
+                      public static String[] solution(String s) {
+                        if (s.length() % 2 != 0) {
+                          s = s + '_';
+                        }
+                        String[] outputArray = s.split("(?&lt;=\\G.{2})");
+                        return outputArray;
+                      }
+                    }
+                </code>
+              </pre>
+            </div>
+            <div>
+              <h5>Javascript</h5>
+              <pre>
+                <code class="Javascript">
+                  function handleSubmit(event) {
+                    event.preventDefault()
+                
+                    // Save the input text into a variable
+                    let formText = document.getElementById('name').value
+                    
+                    // Check if the input text is not an empty string
+                    Client.checkInput(formText);
+                
+                    console.log("::: Form Submitted :::");  
+                
+                    // Post the input text to the server API and receive the sentiment 
+                    // analysed through the external API configured on the server side
+                
+                    postText('http://localhost:8081/text', { "text": formText})
+                    .then(getSentiment('http://localhost:8081/sentiment'))
+                  }
+                
+                  // Implement the POST method to send data to the server endpoint
+                  const postText = async (url = '', data = {}) => {
+                      const response = await fetch(url, {
+                        method: 'POST',
+                        credentials: 'same-origin',
+                        headers: {
+                          'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(data),
+                      });
+                    
+                      try {
+                        const newData = await response.json();
+                        console.log(newData);
+                        return newData;
+                      } catch (error) {
+                        console.log('error', error);
+                      }
+                  }
+                </code>
+              </pre>
+            </div>
+          </div> <!-- end of Code Example -->
+
+          <div id="job-background">
+            <span class="anchor" id="experience"></span>
+            <h3>Job background</h3>
+              <blockquote>I have many years of in-office and self-employed work experience, mainly in translations, accounting and IT support. 
+                Now I would very much like to pursue a career in IT and I am not afraid of starting from a junior position or 
+                internship. I am mature, attentive to detail and responsible, as well as a reliable and positive team player. 
+                I learn fast and will be happy to acquire any missing knowledge from more experienced colleagues to become a 
+                truly valuable member of your team.
+              </blockquote>
+              <p>2015-07 – current: Self-Employed Legal Translator, Moscow and Munich </p>
+                  <ul>
+                    <li>Translating legal, financial, marketing and IT documents for prominent Russian and international law firms and translation agencies</li>
+                  </ul>
+              <p>2007-07 – 2015-08 Pepeliaev Group LLC, a leading law firm based in Moscow, Russia</p>
+              <p>Head of translations department (2009-01 – 2015-08)</p>
+              <p>Translator and interpreter (2007-07 – 2009-01)</p>
+                  <ul>
+                    <li>Managed the work of four translators and one editor</li>
+                    <li>Introduced quality control procedures</li>
+                    <li>Translated client and internal documents</li>
+                    <li>Interpreted during conferences and meetings</li>
+                  </ul>
+              <p>2005-01 – 2007-08 Self-Employed Translator and Interpreter, Moscow, Russia</p>          
+              <p>2004-07 – 2005-01 Latham & Watkins LLP, an international law firm, Moscow, Russia</p>
+              <p>Financial administrator</p>
+              <p>1999-10 – 2004-07 White & Case LLC, an international law firm, Moscow, Russia</p>
+              <p>IT Trainer/Helpdesk (2004-01 – 2004-07)</p>
+                  <ul>
+                    <li>Performed IT helpdesk functions for the Moscow office</li>
+                    <li>Conducted IT trainings for new employees of the Moscow office</li>
+                    <li>Developed IT training materials</li>
+                  </ul>
+              <p>Project Manager (2003-03 – 2004-01)</p>
+                  <ul>
+                    <li>Organised the integration of Elite accounting system and 1C (Russian) accounting system for the Moscow office</li>
+                    <li>Migrated data from 1C to Elite</li>
+                    <li>Trained accounting personnel to use Elite</li>
+                    <li>Coordinated the project implementation with the head office</li>                  
+                  </ul>
+          </div> <!-- end of Experience -->
+        </section> <!-- end of Content -->  
+      </div> <!-- end of wrapper -->
+    </main>
+    <footer class="white">
+        <img src="https://rs.school/images/rs_school_js.svg" alt="logo of RS School" />
+        <div>By Maria Latysheva</div>
+        <h4><a href="https://rs.school/js/">Apply for RSS Javascript/Front-End Course</a></h4>
+        <h4><a href="https://github.com/mlatysheva">My GibHub</a></h4>
+    </footer>
+  </body> 
+</html>
