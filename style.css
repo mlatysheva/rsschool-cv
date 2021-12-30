@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+}
+/* * {
+  border: 1px solid red;
+} */
+
+html, body {
+  font-family: "Open Sans", sans-serif;
+  font-style: light;
+  font-size: 18px;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  margin: 0;
+  overflow-x: hidden;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* header with navigation bar */
+
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 120px;
+  color: seashell;
+  background-color: black;
+  padding-right: 15px;
+}
+
+nav {
+  display: flex;  
+  margin-left: auto;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding-right: 15px;
+  font-size: larger;
+  margin: 5px 5px;
+  padding: 15px 15px;
+}
+
+nav li:hover {
+  background: rgb(72, 77, 85);
+  color: #fff;
+  transition: ease 0.3s all;
+  border-radius: 10px;
+}
+
+nav a {
+  color: seashell;
+}
+nav a:visited {
+  color: rgb(180, 176, 176);
+}
+
+/* Hero banner with jumbotron and contact me button */
+
+.jumbotron {
+  padding-top: 80px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  max-height: 700px;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  color: seashell;
+
+  text-shadow: 1px 1px rgb(39, 40, 41);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/lighthouse.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .btn {
+  border: none;
+  outline: 0;
+  width: 150px;
+  height: 50px;
+  font-size: large;
+  text-align: center;
+  padding: 10px 25px;
+  color: rgb(65, 63, 63);
+  background-color:seashell;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  text-shadow: none;
+}
+
+.jumbotron .btn:hover {
+  background-color: #555;
+  color: white;
+}
+.jumbotron .btn:visited {
+  background-color: #555;
+  color: rgb(190, 187, 187);
+}
+/* helper class to make ancor stop after the fixed header */
+
+.anchor {
+  display:block;
+  height: 120px; /* this is the height of the header */
+  margin-top: -120px; /* this is the negative value of the height of the header */
+  visibility:hidden;
+}
+
+aside {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  /* margin-bottom: 2rem; */
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+}
+
+.contact-block {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(170, 168, 168);
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-left: 20px;
+}
+
+.contacts ul {
+  padding: 0px 20px;
+}
+
+.it-skills {
+  padding-top: 1.5rem;
+  margin-left: 20px;
+}
+
+.languages {
+  margin-left: 20px;
+}
+
+.contacts ul {
+  list-style: none;
+}
+
+.photo {
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* margin-bottom: 1.5rem; */
+}
+
+/* change the direction of the main container for larger screens */
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    flex-direction: row; 
+  }
+}
+
+.content {
+  padding-top: 2rem;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-right: 15px;
+  line-height: 2em;
+}
+
+main {
+  /* to center horizontally */  
+  margin: auto; 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* margin-bottom: 2rem; */
+}
+
+#projects {
+  padding-top: 2rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-card img {
+  max-width: 300px;
+  padding: 10px;
+}
+
+#education {
+  padding-top: 2rem;
+}
+
+#job-background {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#examples {
+  padding-top: 2rem;
+}
+
+.code-examples {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: normal;
+}
+
+footer {
+  height: 200px;
+  width: 100vw;
+  background-color: black;
+  color: seashell;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: black;
+}
+
+footer img {
+  max-width: 200px;
+  background-color: white;
+}
+
+footer a {
+  color: seashell;
+}
+
+footer a:visited {
+  color:rgb(170, 168, 168)
+}
