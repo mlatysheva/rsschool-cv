@@ -10,7 +10,7 @@
       <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
       <script>hljs.initHighlightingOnLoad();</script>
       <script>hljs.highlightAll();</script>
-      <script type="text/javascript" src="app.js"></script>
+      <script src="app.js"></script>
     <title>Maria Latysheva Front-End Developer</title>
   </head>    
   <body>
@@ -30,7 +30,7 @@
     <main >
       <div class="jumbotron">
           <h1>Maria Latysheva</h1>
-          <h2>I am a Front-End Developer</h2>
+          <p class="title">I am a Front-End Developer</p>
           <a href="mailto:mlatysheva@gmail.com" class="btn btn-large btn-block btn-info">Contact me</a>   
       </div>
 
@@ -40,23 +40,23 @@
           <section class="contact-block">
             <div class="contacts" >
               <span class="anchor" id="contact-info"></span>
-              <h3 >Contact info</h3>
+              <h2>Contact info</h2>
               <ul>
-                <li>Munich, 81377, Germany</li>
-                <li>Tel. +XX XXX XXX XXX</li>
-                <li>E-mail: xxxxxxxxx@gmail.com</li>
+                <li>Krasnogorsk, Moscow Region</li>
+                <li>Tel. +7-926-211-3904</li>
+                <li>E-mail: mlatysheva@gmail.com</li>
                 <li><a href="https://www.linkedin.com/in/maria-latysheva-21003615/">LinkedIn</a></li>
                 <li><a href="https://github.com/mlatysheva">GitHub</a></li>
               </ul>
             </div>
             <figure class="photo">
-              <img src="./IMG_5266.JPG" alt="photo of Maria" width="200">
+              <img src="./images/IMG_5266.JPG" alt="photo of Maria" width="200">
             </figure>          
           </section> <!-- end of Contact Block -->
 
           <div class="it-skills">
             <span class="anchor" id="skills"></span>
-            <h4>IT skills</h4>
+            <h2>IT skills</h2>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -69,7 +69,7 @@
             </ul>
           </div>
           <div class="languages">
-            <h4>Languages</h4>
+            <h2>Languages</h2>
             <ul>
               <li>Russian native</li>
               <li>English C2</li>
@@ -82,52 +82,77 @@
         
         <!-- Container to keep main content: About, Courses & Education, Projects, Code Example and Job Background -->
         <section class="content">        
-          <div>
+          <div class="about-section">
             <span class="anchor" id="about-me"></span>
-            <h3>About me</h3>
-            <blockquote>
+            <h2>About me</h2>
+            <div class="about-quote">
               I am a self-taught IT enthusiast. In 2020, I completed Front-End Developer and Data Analyst nanodegree courses 
               at <a href="https://udacity.com">udacity.com</a>. During the studies, I completed a number of <a href="#.projects">projects</a> in Front End and Data Analysis. 
               You can see them on <a href="https://github.com/mlatysheva">my GitHub account</a>. 
-              I am currently taking the Javascript/Front-End Development course at <a href="https://rs.school">Rolling Scopes School</a>.             </blockquote> 
+              I am currently taking the Javascript/Front-End Development course at <a href="https://rs.school">Rolling Scopes School</a>.             
+            </div> 
           </div>
 
           <span class="anchor" id="projects"></span>
-          <h3>Example projects</h3> 
-          <div class="projects">            
+          <h2>Example projects</h2> 
+          <div class="projects"> 
+            <div class="project-card">
+              <h3>Art Quiz</h3>                
+              <a class="project-link" href="https://mlatysheva.github.io/art-quiz/" target="_blank">
+                <img src="images/screenshot-art-quiz.png" alt="screenshot of the Art Quiz game" />
+              </a>
+            </div>
+                     
             <div class="project-card">                
-              <h4>Travel App</h4>
-              <figure>
-                <p><img src="images/Travel-Planner-App.png" alt="screenshot of the travel app" /></p>
-                <figcaption><a href="https://mlatysheva.github.io/udacity_capstone_travel_app/" target="_blank">See the full project</a></figcaption>
-              </figure>
-            </div>
-            <div class="project-card">
-              <h4>Weather Journal App</h4>
-              <figure>
-                <p><img src="images/Weather-Journal-App.png" alt="screenshot of the Weather Journal App" /></p>
-                <figcaption><a href="https://mlatysheva.github.io/udacity_weather_journal_app/" target="_blank">See the full project</a></figcaption>
-              </figure>
+              <h3>Christmas Tree</h3>
+              <a class="project-link" href="https://rolling-scopes-school.github.io/mlatysheva-JSFE2021Q3/christmas-task-part2/" target="_blank">
+                <img src="images/screenshot-christmas-tree.png" alt="screenshot of the Christmas Tree game" />
+              </a>
             </div> 
+            <div class="project-card">                
+              <h3>Momentum</h3>
+              <a class="project-link" href="https://rolling-scopes-school.github.io/mlatysheva-JSFE2021Q3/momentum/" target="_blank">
+                <img src="images/screenshot-momentum.png" alt="screenshot of the momentum app" />
+              </a>
+            </div>  
+          
+            <div class="project-card">                
+              <h3>Museum</h3>
+              <a class="project-link" href="https://mlatysheva.github.io/museum/" target="_blank">
+                <img src="images/screenshot-museum.png" alt="screenshot of the museum app" />
+              </a>
+            </div>
+
             <div class="project-card">
-              <h4>Data Visualisation</h4>
-              <figure>
-                <p><img src="images/Data-Visualisation-Project.png" alt="screenshot of the data visualisation project" /></p>
-                <figcaption><a href="https://mlatysheva.github.io/udacity_DAND_data_visualisation_project/" target="_blank">See the full project</a></figcaption>
-              </figure>
+              <h3>Russian Proverbs Slider</h3>
+              <a class="project-link" href="https://mlatysheva.github.io/cssMemSlider/" target="_blank">
+                <img src="images/screenshot-mem-slider.png" alt="screenshot of the Proverbs Slider" />
+              </a>
+            </div> 
+                   
+            <div class="project-card">                
+              <h3>Travel App</h3>
+              <a class="project-link" href="https://mlatysheva.github.io/udacity_capstone_travel_app/" target="_blank">
+                <img src="images/screenshot-travel-app.png" alt="screenshot of the travel app" />
+              </a>
             </div>
             <div class="project-card">
-              <h4>Gap Minder Dataset Analysis</h4>
-              <figure>
-                <p><img src="images/Investigate-GAP-Minder-Dataset.png" alt="screenshot of the GAP Minder dataset analysis" /></p>
-                <figcaption><a href="https://mlatysheva.github.io/udacity_investigate_Gapminder_dataset/investigate_Gapminder_dataset.html" target="_blank">See the full project</a></figcaption>
-              </figure>
+              <h3>Data Visualisation</h3>
+              <a class="project-link" href="https://mlatysheva.github.io/udacity_DAND_data_visualisation_project/" target="_blank">
+                <img src="images/Data-Visualisation-Project.png" alt="screenshot of the data visualisation project" />
+              </a>
+            </div>
+            <div class="project-card">
+              <h3>Gap Minder Dataset Analysis</h3>
+              <a class="project-link" href="https://mlatysheva.github.io/udacity_investigate_Gapminder_dataset/investigate_Gapminder_dataset.html" target="_blank">
+                <img src="images/Investigate-GAP-Minder-Dataset.png" alt="screenshot of the GAP Minder dataset analysis" />
+              </a>
             </div> 
           </div> <!-- end of Projects -->
 
-          <div>
+          <div class="text-section">
             <span class="anchor" id="education"></span>
-            <h3>Courses and education</h3>
+            <h2>Courses and education</h2>
             <p><span>07-2021 – present time </span> <span>Rolling Scopes School </span> <span>Javascript/Front-End Development Course</span> </p>
             <p><span>04-2021 – present time </span> <span>Fern University Hagen, Germany </span> <span>Business Informatics, 1st year</span> </p>
             <p><span>2020-05 – 2020-10 </span> <span>Udacticy.com </span> <span>Data Analyst Nanodegree</span></p>
@@ -138,10 +163,11 @@
           </div> <!-- end of Courses -->
 
           <span class="anchor" id="examples"></span>
-          <h4>Examples of code</h4>
+          <h2>Examples of code</h2>
           <div class="code-examples">
-            <div>
-              <h5>Java</h5>
+            <p class="title">Java</p>
+            <div>          
+              
               <pre>
                 <code class="java">import java.util.Arrays;
                   public class StringSplit {
@@ -156,8 +182,8 @@
                 </code>
               </pre>
             </div>
-            <div>
-              <h5>Javascript</h5>
+            <p class="title">Javascript</p>
+            <div>              
               <pre>
                 <code class="Javascript">
                   function handleSubmit(event) {
@@ -204,7 +230,7 @@
 
           <div id="job-background">
             <span class="anchor" id="experience"></span>
-            <h3>Job background</h3>
+            <h2>Job background</h2>
               <blockquote>I have many years of in-office and self-employed work experience, mainly in translations, accounting and IT support. 
                 Now I would very much like to pursue a career in IT and I am not afraid of starting from a junior position or 
                 internship. I am mature, attentive to detail and responsible, as well as a reliable and positive team player. 
@@ -248,8 +274,8 @@
     <footer class="white">
         <img src="https://rs.school/images/rs_school_js.svg" alt="logo of RS School" />
         <div>By Maria Latysheva</div>
-        <h4><a href="https://rs.school/js/">Apply for RSS Javascript/Front-End Course</a></h4>
-        <h4><a href="https://github.com/mlatysheva">My GibHub</a></h4>
+        <p><a href="https://rs.school/js/">Apply for RSS Javascript/Front-End Course</a></p>
+        <p><a href="https://github.com/mlatysheva" class="github-link">My GibHub</a></p>
     </footer>
   </body> 
 </html>
