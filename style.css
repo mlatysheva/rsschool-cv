@@ -5,19 +5,25 @@
   border: 1px solid red;
 } */
 
-html, body {
+html {
   font-family: "Open Sans", sans-serif;
   font-style: light;
   font-size: 18px;
   height: 100%;
   width: 100%;
   background-color: white;
-  margin: 0;
-  overflow-x: hidden;
 }
+
 body {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 
@@ -51,7 +57,6 @@ nav li {
   padding-right: 15px;
   font-size: larger;
   margin: 5px 5px;
-  padding: 15px 15px;
 }
 
 nav li:hover {
@@ -63,6 +68,7 @@ nav li:hover {
 
 nav a {
   color: seashell;
+  padding: 1rem;
 }
 nav a:visited {
   color: rgb(180, 176, 176);
@@ -83,12 +89,18 @@ nav a:visited {
   text-align: center;
   width: 100%;
   color: seashell;
-
   text-shadow: 1px 1px rgb(39, 40, 41);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/lighthouse.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.title {
+  font-size: larger;
+}
+ 
+h2 {
+  width: 100%;
 }
 
 .jumbotron .btn {
@@ -125,10 +137,7 @@ nav a:visited {
 }
 
 aside {
-  margin: auto;
   width: 100%;
-  height: 100%;
-  /* margin-bottom: 2rem; */
   display: flex;
   flex-direction: column;
   background-color: lightgrey;
@@ -171,35 +180,50 @@ aside {
 }
 
 .wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  /* margin-bottom: 1.5rem; */
 }
 
 /* change the direction of the main container for larger screens */
 
-@media screen and (min-width: 1000px) {
+@media (min-width: 1200px) {
   .wrapper {
     flex-direction: row; 
   }
+  aside {
+    width: 500px;
+  }
+  .content {
+    width: calc(100% - 500px);
+  }
+}
+
+main {
+  /* to center horizontally */  
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   padding-top: 2rem;
   margin-left: 15px;
   margin-right: 15px;
   padding-right: 15px;
   line-height: 2em;
 }
-
-main {
-  /* to center horizontally */  
-  margin: auto; 
-  display: flex;
-  flex-direction: column;
+.about-section {
   width: 100%;
-  /* margin-bottom: 2rem; */
+}
+.about-quote {
+  width: 90%;
+  margin-left: 2rem;
 }
 
 #projects {
@@ -207,10 +231,14 @@ main {
 }
 
 .projects {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+.project-link {
+  display: block;
 }
 
 .project-card {
@@ -223,6 +251,10 @@ main {
 .project-card img {
   max-width: 300px;
   padding: 10px;
+}
+
+.text-section {
+  width: 100%;
 }
 
 #education {
@@ -238,35 +270,73 @@ main {
   padding-top: 2rem;
 }
 
-.code-examples {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+.code-examples {  
   line-height: normal;
+  width: 100%;
+}
+.hljs {
+  width: 100%;
+  overflow-x: none !important;
 }
 
 footer {
-  height: 200px;
-  width: 100vw;
+  height: 80px;
+  width: 100%;
   background-color: black;
   color: seashell;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   border-top: black;
 }
 
 footer img {
-  max-width: 200px;
+  display: block;
+  margin-left: 2rem;
+  max-width: 150px;
   background-color: white;
 }
 
 footer a {
   color: seashell;
 }
+.github-link {
+  display: block;
+  margin-right: 2rem;
+}
 
 footer a:visited {
   color:rgb(170, 168, 168)
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+    font-weight: normal;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .contact-block {
+    flex-direction: column;
+  }
+  .photo {
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .projects {
+    justify-content: center;
+  }
+  footer img {
+    margin-left: 1rem;
+    max-width: 100px;
+  }
+  footer div {
+    margin-left: 1rem;
+  }
+  footer p {
+    margin-left: 1rem;
+  }
 }
