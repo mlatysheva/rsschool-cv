@@ -287,7 +287,7 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   border-top: black;
 }
 
@@ -308,6 +308,10 @@ footer a {
 
 footer a:visited {
   color:rgb(170, 168, 168)
+}
+.year {
+  display: block;
+  padding-right: 30px;
 }
 
 @media (max-width: 500px) {
