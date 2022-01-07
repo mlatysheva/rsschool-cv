@@ -15,17 +15,21 @@
   </head>    
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#skills">IT skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#examples">Code Examples</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact-info">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="header">
+        <div class="nav-container">
+          <nav>
+            <ul >
+              <li><a href="#about-me">About me</a></li>
+              <li><a href="#skills">IT skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#examples">Code Examples</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#contact-info">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main >
       <div class="jumbotron">
@@ -34,248 +38,253 @@
           <a href="mailto:mlatysheva@gmail.com" class="btn btn-large btn-block btn-info">Contact me</a>   
       </div>
 
-      <!-- Container to keep photo, contact, it skills and languages -->
-      <div class="wrapper">
-        <aside>
-          <section class="contact-block">
-            <div class="contacts" >
-              <span class="anchor" id="contact-info"></span>
-              <h2>Contact info</h2>
+      <div class="container">
+
+        <!-- Container to keep photo, contact, it skills and languages -->
+        <div class="wrapper">
+          <aside>
+            <section class="contact-block">
+              <div class="contacts" >
+                <span class="anchor" id="contact-info"></span>
+                <h2>Contact info</h2>
+                <ul>
+                  <li>Krasnogorsk, Moscow Region</li>
+                  <li>Tel. +7-926-211-3904</li>
+                  <li>E-mail: mlatysheva@gmail.com</li>
+                  <li><a href="https://www.linkedin.com/in/maria-latysheva-21003615/">LinkedIn</a></li>
+                  <li><a href="https://github.com/mlatysheva">GitHub</a></li>
+                </ul>
+              </div>
+              <figure class="photo">
+                <img src="./images/IMG_5266.JPG" alt="photo of Maria" width="200">
+              </figure>          
+            </section> <!-- end of Contact Block -->
+
+            <div class="it-skills">
+              <span class="anchor" id="skills"></span>
+              <h2>IT skills</h2>
               <ul>
-                <li>Krasnogorsk, Moscow Region</li>
-                <li>Tel. +7-926-211-3904</li>
-                <li>E-mail: mlatysheva@gmail.com</li>
-                <li><a href="https://www.linkedin.com/in/maria-latysheva-21003615/">LinkedIn</a></li>
-                <li><a href="https://github.com/mlatysheva">GitHub</a></li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript and Node.js</li>
+                <li>Python, incl. NumPy, Pandas, Matplotlib</li>
+                <li>SQL</li>
+                <li>Java</li>
+                <li>Git and Github</li>
+                <li>Webpack</li>
               </ul>
             </div>
-            <figure class="photo">
-              <img src="./images/IMG_5266.JPG" alt="photo of Maria" width="200">
-            </figure>          
-          </section> <!-- end of Contact Block -->
-
-          <div class="it-skills">
-            <span class="anchor" id="skills"></span>
-            <h2>IT skills</h2>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript and Node.js</li>
-              <li>Python, incl. NumPy, Pandas, Matplotlib</li>
-              <li>SQL</li>
-              <li>Java</li>
-              <li>Git and Github</li>
-              <li>Webpack</li>
-            </ul>
-          </div>
-          <div class="languages">
-            <h2>Languages</h2>
-            <ul>
-              <li>Russian native</li>
-              <li>English C2</li>
-              <li>German B2</li>
-              <li>Spanish B1</li>
-            </ul>
-          </div>
-        </aside>   
-
-        
-        <!-- Container to keep main content: About, Courses & Education, Projects, Code Example and Job Background -->
-        <section class="content">        
-          <div class="about-section">
-            <span class="anchor" id="about-me"></span>
-            <h2>About me</h2>
-            <div class="about-quote">
-              I am a self-taught IT enthusiast. In 2020, I completed Front-End Developer and Data Analyst nanodegree courses 
-              at <a href="https://udacity.com">udacity.com</a>. During the studies, I completed a number of <a href="#.projects">projects</a> in Front End and Data Analysis. 
-              You can see them on <a href="https://github.com/mlatysheva">my GitHub account</a>. 
-              I am currently taking the Javascript/Front-End Development course at <a href="https://rs.school">Rolling Scopes School</a>.             
-            </div> 
-          </div>
-
-          <span class="anchor" id="projects"></span>
-          <h2>Example projects</h2> 
-          <div class="projects"> 
-            <div class="project-card">
-              <h3>Art Quiz</h3>                
-              <a class="project-link" href="https://mlatysheva.github.io/art-quiz/" target="_blank">
-                <img src="images/screenshot-art-quiz.png" alt="screenshot of the Art Quiz game" />
-              </a>
+            <div class="languages">
+              <h2>Languages</h2>
+              <ul>
+                <li>Russian native</li>
+                <li>English C2</li>
+                <li>German B2</li>
+                <li>Spanish B1</li>
+              </ul>
             </div>
-                     
-            <div class="project-card">                
-              <h3>Christmas Tree</h3>
-              <a class="project-link" href="https://rolling-scopes-school.github.io/mlatysheva-JSFE2021Q3/christmas-task-part2/" target="_blank">
-                <img src="images/screenshot-christmas-tree.png" alt="screenshot of the Christmas Tree game" />
-              </a>
-            </div> 
-            <div class="project-card">                
-              <h3>Momentum</h3>
-              <a class="project-link" href="https://rolling-scopes-school.github.io/mlatysheva-JSFE2021Q3/momentum/" target="_blank">
-                <img src="images/screenshot-momentum.png" alt="screenshot of the momentum app" />
-              </a>
-            </div>  
+          </aside>   
+
           
-            <div class="project-card">                
-              <h3>Museum</h3>
-              <a class="project-link" href="https://mlatysheva.github.io/museum/" target="_blank">
-                <img src="images/screenshot-museum.png" alt="screenshot of the museum app" />
-              </a>
+          <!-- Container to keep main content: About, Courses & Education, Projects, Code Example and Job Background -->
+          <section class="content">        
+            <div class="about-section">
+              <span class="anchor" id="about-me"></span>
+              <h2>About me</h2>
+              <div class="about-quote">
+                I am a self-taught IT enthusiast. In 2020, I completed Front-End Developer and Data Analyst nanodegree courses 
+                at <a href="https://udacity.com">udacity.com</a>. During the studies, I completed a number of <a href="#.projects">projects</a> in Front End and Data Analysis. 
+                You can see them on <a href="https://github.com/mlatysheva">my GitHub account</a>. 
+                I am currently taking the Javascript/Front-End Development course at <a href="https://rs.school">Rolling Scopes School</a>.             
+              </div> 
             </div>
 
-            <div class="project-card">
-              <h3>Russian Proverbs Slider</h3>
-              <a class="project-link" href="https://mlatysheva.github.io/cssMemSlider/" target="_blank">
-                <img src="images/screenshot-mem-slider.png" alt="screenshot of the Proverbs Slider" />
-              </a>
-            </div> 
-                   
-            <div class="project-card">                
-              <h3>Travel App</h3>
-              <a class="project-link" href="https://mlatysheva.github.io/udacity_capstone_travel_app/" target="_blank">
-                <img src="images/screenshot-travel-app.png" alt="screenshot of the travel app" />
-              </a>
-            </div>
-            <div class="project-card">
-              <h3>Data Visualisation</h3>
-              <a class="project-link" href="https://mlatysheva.github.io/udacity_DAND_data_visualisation_project/" target="_blank">
-                <img src="images/Data-Visualisation-Project.png" alt="screenshot of the data visualisation project" />
-              </a>
-            </div>
-            <div class="project-card">
-              <h3>Gap Minder Dataset Analysis</h3>
-              <a class="project-link" href="https://mlatysheva.github.io/udacity_investigate_Gapminder_dataset/investigate_Gapminder_dataset.html" target="_blank">
-                <img src="images/Investigate-GAP-Minder-Dataset.png" alt="screenshot of the GAP Minder dataset analysis" />
-              </a>
-            </div> 
-          </div> <!-- end of Projects -->
+            <span class="anchor" id="projects"></span>
+            <h2>Example projects</h2> 
+            <div class="projects"> 
+              <div class="project-card">
+                <h3>Art Quiz</h3>                
+                <a class="project-link" href="https://mlatysheva.github.io/art-quiz/" target="_blank">
+                  <img src="images/screenshot-art-quiz.png" alt="screenshot of the Art Quiz game" />
+                </a>
+              </div>
+                      
+              <div class="project-card">                
+                <h3>Christmas Tree</h3>
+                <a class="project-link" href="https://rolling-scopes-school.github.io/mlatysheva-JSFE2021Q3/christmas-task-part2/" target="_blank">
+                  <img src="images/screenshot-christmas-tree.png" alt="screenshot of the Christmas Tree game" />
+                </a>
+              </div> 
+              <div class="project-card">                
+                <h3>Momentum</h3>
+                <a class="project-link" href="https://rolling-scopes-school.github.io/mlatysheva-JSFE2021Q3/momentum/" target="_blank">
+                  <img src="images/screenshot-momentum.png" alt="screenshot of the momentum app" />
+                </a>
+              </div>  
+            
+              <div class="project-card">                
+                <h3>Museum</h3>
+                <a class="project-link" href="https://mlatysheva.github.io/museum/" target="_blank">
+                  <img src="images/screenshot-museum.png" alt="screenshot of the museum app" />
+                </a>
+              </div>
 
-          <div class="text-section">
-            <span class="anchor" id="education"></span>
-            <h2>Courses and education</h2>
-            <p><span>07-2021 – present time </span> <span>Rolling Scopes School </span> <span>Javascript/Front-End Development Course</span> </p>
-            <p><span>04-2021 – present time </span> <span>Fern University Hagen, Germany </span> <span>Business Informatics, 1st year</span> </p>
-            <p><span>2020-05 – 2020-10 </span> <span>Udacticy.com </span> <span>Data Analyst Nanodegree</span></p>
-            <p><span>2019-12 – 2020-05 </span> <span> Udacticy.com </span> <span> Front-End Developer Nanodegree </span></p>
-            <p><span>2002-08 – 2003-06 </span> <span> Moscow State University </span> <span>Applied Math & Informatics </span></p>
-            <p><span>1996-08 – 2001-06 </span> <span> Moscow State Linguistic University </span> <span>World Economics (Diploma with honours)</span></p>
+              <div class="project-card">
+                <h3>Russian Proverbs Slider</h3>
+                <a class="project-link" href="https://mlatysheva.github.io/cssMemSlider/" target="_blank">
+                  <img src="images/screenshot-mem-slider.png" alt="screenshot of the Proverbs Slider" />
+                </a>
+              </div> 
+                    
+              <div class="project-card">                
+                <h3>Travel App</h3>
+                <a class="project-link" href="https://mlatysheva.github.io/udacity_capstone_travel_app/" target="_blank">
+                  <img src="images/screenshot-travel-app.png" alt="screenshot of the travel app" />
+                </a>
+              </div>
+              <div class="project-card">
+                <h3>Data Visualisation</h3>
+                <a class="project-link" href="https://mlatysheva.github.io/udacity_DAND_data_visualisation_project/" target="_blank">
+                  <img src="images/Data-Visualisation-Project.png" alt="screenshot of the data visualisation project" />
+                </a>
+              </div>
+              <div class="project-card">
+                <h3>Gap Minder Dataset Analysis</h3>
+                <a class="project-link" href="https://mlatysheva.github.io/udacity_investigate_Gapminder_dataset/investigate_Gapminder_dataset.html" target="_blank">
+                  <img src="images/Investigate-GAP-Minder-Dataset.png" alt="screenshot of the GAP Minder dataset analysis" />
+                </a>
+              </div> 
+            </div> <!-- end of Projects -->
 
-          </div> <!-- end of Courses -->
+            <div class="text-section">
+              <span class="anchor" id="education"></span>
+              <h2>Courses and education</h2>
+              <p><span>07-2021 – present time </span> <span>Rolling Scopes School </span> <span>Javascript/Front-End Development Course</span> </p>
+              <p><span>04-2021 – present time </span> <span>Fern University Hagen, Germany </span> <span>Business Informatics, 1st year</span> </p>
+              <p><span>2020-05 – 2020-10 </span> <span>Udacticy.com </span> <span>Data Analyst Nanodegree</span></p>
+              <p><span>2019-12 – 2020-05 </span> <span> Udacticy.com </span> <span> Front-End Developer Nanodegree </span></p>
+              <p><span>2002-08 – 2003-06 </span> <span> Moscow State University </span> <span>Applied Math & Informatics </span></p>
+              <p><span>1996-08 – 2001-06 </span> <span> Moscow State Linguistic University </span> <span>World Economics (Diploma with honours)</span></p>
 
-          <span class="anchor" id="examples"></span>
-          <h2>Examples of code</h2>
-          <div class="code-examples">
-            <p class="title">Java</p>
-            <div>          
-              
-              <pre>
-                <code class="java">import java.util.Arrays;
-                  public class StringSplit {
-                      public static String[] solution(String s) {
-                        if (s.length() % 2 != 0) {
-                          s = s + '_';
+            </div> <!-- end of Courses -->
+
+            <span class="anchor" id="examples"></span>
+            <h2>Examples of code</h2>
+            <div class="code-examples">
+              <p class="title">Java</p>
+              <div>          
+                
+                <pre>
+                  <code class="java">import java.util.Arrays;
+                    public class StringSplit {
+                        public static String[] solution(String s) {
+                          if (s.length() % 2 != 0) {
+                            s = s + '_';
+                          }
+                          String[] outputArray = s.split("(?&lt;=\\G.{2})");
+                          return outputArray;
                         }
-                        String[] outputArray = s.split("(?&lt;=\\G.{2})");
-                        return outputArray;
                       }
+                  </code>
+                </pre>
+              </div>
+              <p class="title">Javascript</p>
+              <div>              
+                <pre>
+                  <code class="Javascript">
+                    function handleSubmit(event) {
+                      event.preventDefault()
+                  
+                      // Save the input text into a variable
+                      let formText = document.getElementById('name').value
+                      
+                      // Check if the input text is not an empty string
+                      Client.checkInput(formText);
+                  
+                      console.log("::: Form Submitted :::");  
+                  
+                      // Post the input text to the server API and receive the sentiment 
+                      // analysed through the external API configured on the server side
+                  
+                      postText('http://localhost:8081/text', { "text": formText})
+                      .then(getSentiment('http://localhost:8081/sentiment'))
                     }
-                </code>
-              </pre>
-            </div>
-            <p class="title">Javascript</p>
-            <div>              
-              <pre>
-                <code class="Javascript">
-                  function handleSubmit(event) {
-                    event.preventDefault()
-                
-                    // Save the input text into a variable
-                    let formText = document.getElementById('name').value
-                    
-                    // Check if the input text is not an empty string
-                    Client.checkInput(formText);
-                
-                    console.log("::: Form Submitted :::");  
-                
-                    // Post the input text to the server API and receive the sentiment 
-                    // analysed through the external API configured on the server side
-                
-                    postText('http://localhost:8081/text', { "text": formText})
-                    .then(getSentiment('http://localhost:8081/sentiment'))
-                  }
-                
-                  // Implement the POST method to send data to the server endpoint
-                  const postText = async (url = '', data = {}) => {
-                      const response = await fetch(url, {
-                        method: 'POST',
-                        credentials: 'same-origin',
-                        headers: {
-                          'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify(data),
-                      });
-                    
-                      try {
-                        const newData = await response.json();
-                        console.log(newData);
-                        return newData;
-                      } catch (error) {
-                        console.log('error', error);
-                      }
-                  }
-                </code>
-              </pre>
-            </div>
-          </div> <!-- end of Code Example -->
+                  
+                    // Implement the POST method to send data to the server endpoint
+                    const postText = async (url = '', data = {}) => {
+                        const response = await fetch(url, {
+                          method: 'POST',
+                          credentials: 'same-origin',
+                          headers: {
+                            'Content-Type': 'application/json',
+                          },
+                          body: JSON.stringify(data),
+                        });
+                      
+                        try {
+                          const newData = await response.json();
+                          console.log(newData);
+                          return newData;
+                        } catch (error) {
+                          console.log('error', error);
+                        }
+                    }
+                  </code>
+                </pre>
+              </div>
+            </div> <!-- end of Code Example -->
 
-          <div id="job-background">
-            <span class="anchor" id="experience"></span>
-            <h2>Job background</h2>
-              <blockquote>I have many years of in-office and self-employed work experience, mainly in translations, accounting and IT support. 
-                Now I would very much like to pursue a career in IT and I am not afraid of starting from a junior position or 
-                internship. I am mature, attentive to detail and responsible, as well as a reliable and positive team player. 
-                I learn fast and will be happy to acquire any missing knowledge from more experienced colleagues to become a 
-                truly valuable member of your team.
-              </blockquote>
-              <p>2015-07 – current: Self-Employed Legal Translator, Moscow and Munich </p>
-                  <ul>
-                    <li>Translating legal, financial, marketing and IT documents for prominent Russian and international law firms and translation agencies</li>
-                  </ul>
-              <p>2007-07 – 2015-08 Pepeliaev Group LLC, a leading law firm based in Moscow, Russia</p>
-              <p>Head of translations department (2009-01 – 2015-08)</p>
-              <p>Translator and interpreter (2007-07 – 2009-01)</p>
-                  <ul>
-                    <li>Managed the work of four translators and one editor</li>
-                    <li>Introduced quality control procedures</li>
-                    <li>Translated client and internal documents</li>
-                    <li>Interpreted during conferences and meetings</li>
-                  </ul>
-              <p>2005-01 – 2007-08 Self-Employed Translator and Interpreter, Moscow, Russia</p>          
-              <p>2004-07 – 2005-01 Latham & Watkins LLP, an international law firm, Moscow, Russia</p>
-              <p>Financial administrator</p>
-              <p>1999-10 – 2004-07 White & Case LLC, an international law firm, Moscow, Russia</p>
-              <p>IT Trainer/Helpdesk (2004-01 – 2004-07)</p>
-                  <ul>
-                    <li>Performed IT helpdesk functions for the Moscow office</li>
-                    <li>Conducted IT trainings for new employees of the Moscow office</li>
-                    <li>Developed IT training materials</li>
-                  </ul>
-              <p>Project Manager (2003-03 – 2004-01)</p>
-                  <ul>
-                    <li>Organised the integration of Elite accounting system and 1C (Russian) accounting system for the Moscow office</li>
-                    <li>Migrated data from 1C to Elite</li>
-                    <li>Trained accounting personnel to use Elite</li>
-                    <li>Coordinated the project implementation with the head office</li>                  
-                  </ul>
-          </div> <!-- end of Experience -->
-        </section> <!-- end of Content -->  
-      </div> <!-- end of wrapper -->
+            <div id="job-background">
+              <span class="anchor" id="experience"></span>
+              <h2>Job background</h2>
+                <blockquote>I have many years of in-office and self-employed work experience, mainly in translations, accounting and IT support. 
+                  Now I would very much like to pursue a career in IT and I am not afraid of starting from a junior position or 
+                  internship. I am mature, attentive to detail and responsible, as well as a reliable and positive team player. 
+                  I learn fast and will be happy to acquire any missing knowledge from more experienced colleagues to become a 
+                  truly valuable member of your team.
+                </blockquote>
+                <p>2015-07 – current: Self-Employed Legal Translator, Moscow and Munich </p>
+                    <ul>
+                      <li>Translating legal, financial, marketing and IT documents for prominent Russian and international law firms and translation agencies</li>
+                    </ul>
+                <p>2007-07 – 2015-08 Pepeliaev Group LLC, a leading law firm based in Moscow, Russia</p>
+                <p>Head of translations department (2009-01 – 2015-08)</p>
+                <p>Translator and interpreter (2007-07 – 2009-01)</p>
+                    <ul>
+                      <li>Managed the work of four translators and one editor</li>
+                      <li>Introduced quality control procedures</li>
+                      <li>Translated client and internal documents</li>
+                      <li>Interpreted during conferences and meetings</li>
+                    </ul>
+                <p>2005-01 – 2007-08 Self-Employed Translator and Interpreter, Moscow, Russia</p>          
+                <p>2004-07 – 2005-01 Latham & Watkins LLP, an international law firm, Moscow, Russia</p>
+                <p>Financial administrator</p>
+                <p>1999-10 – 2004-07 White & Case LLC, an international law firm, Moscow, Russia</p>
+                <p>IT Trainer/Helpdesk (2004-01 – 2004-07)</p>
+                    <ul>
+                      <li>Performed IT helpdesk functions for the Moscow office</li>
+                      <li>Conducted IT trainings for new employees of the Moscow office</li>
+                      <li>Developed IT training materials</li>
+                    </ul>
+                <p>Project Manager (2003-03 – 2004-01)</p>
+                    <ul>
+                      <li>Organised the integration of Elite accounting system and 1C (Russian) accounting system for the Moscow office</li>
+                      <li>Migrated data from 1C to Elite</li>
+                      <li>Trained accounting personnel to use Elite</li>
+                      <li>Coordinated the project implementation with the head office</li>                  
+                    </ul>
+            </div> <!-- end of Experience -->
+          </section> <!-- end of Content -->  
+        </div> <!-- end of wrapper -->
+      </div>
     </main>
-    <footer class="white">
+    <footer >
+      <div class="white footer">
         <img src="https://rs.school/images/rs_school_js.svg" alt="logo of RS School" />
         <p><a href="https://rs.school/js/">Apply for RSS Javascript/Front-End Course</a></p>
         <p><a href="https://github.com/mlatysheva" class="github-link">GibHub Maria Latysheva</a></p>
         <div class="year">2022</div>
+      </div>
     </footer>
   </body> 
 </html>

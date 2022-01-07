@@ -28,8 +28,16 @@ a {
 
 
 /* header with navigation bar */
-
 header {
+  width: 100%;
+  background-color: black;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-shadow: 0 0 2rem rgb(0 0 0 / 0.3);
+}
+.header {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -41,9 +49,13 @@ header {
   background-color: black;
   padding-right: 15px;
 }
+.nav-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 nav {
-  display: flex;  
+  display: flex; 
   margin-left: auto;
   align-items: center;
 }
@@ -279,7 +291,7 @@ main {
   overflow-x: none !important;
 }
 
-footer {
+.footer {
   height: 80px;
   width: 100%;
   background-color: black;
@@ -291,14 +303,14 @@ footer {
   border-top: black;
 }
 
-footer img {
+.footer img {
   display: block;
   margin-left: 2rem;
   max-width: 150px;
   background-color: white;
 }
 
-footer a {
+.footer a {
   color: seashell;
 }
 .github-link {
@@ -306,7 +318,7 @@ footer a {
   margin-right: 2rem;
 }
 
-footer a:visited {
+.footer a:visited {
   color:rgb(170, 168, 168)
 }
 .year {
@@ -333,14 +345,14 @@ footer a:visited {
   .projects {
     justify-content: center;
   }
-  footer img {
+  .footer img {
     margin-left: 1rem;
     max-width: 100px;
   }
-  footer div {
+  .footer div {
     margin-left: 1rem;
   }
-  footer p {
+  .footer p {
     margin-left: 1rem;
   }
 }
