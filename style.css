@@ -1,9 +1,7 @@
 * {
   box-sizing: border-box;
 }
-/* * {
-  border: 1px solid red;
-} */
+
 :root {
   --font1: 18px;
 }
@@ -146,8 +144,8 @@ h2 {
 
 .anchor {
   display:block;
-  height: 120px; /* this is the height of the header */
-  margin-top: -120px; /* this is the negative value of the height of the header */
+  height: 120px;
+  margin-top: -120px; 
   visibility:hidden;
 }
 
@@ -275,7 +273,6 @@ aside {
 
 .photo-image {
   padding-right: 1rem;
-  /* margin-left: auto; */
 }
 
 .wrapper {
@@ -300,7 +297,6 @@ aside {
 }
 
 main {
-  /* to center horizontally */  
   margin: 0 auto; 
   display: flex;
   flex-direction: column;
