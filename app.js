@@ -1,3 +1,31 @@
+var checkExist = setInterval(() => {
+  const hamburger = document.querySelector(".hamburger");
+  if (hamburger) {
+    clearInterval(checkExist);
+  }
+
+  const navMenu = document.querySelector(".nav-menu");
+
+  hamburger.addEventListener("click", smallscreenMenu);
+
+  function smallscreenMenu() {
+    hamburger.classList.toggle("active");
+    console.log('hamburger clicked');
+    navMenu.classList.toggle("active");
+  }
+
+  const navLink = document.querySelectorAll(".nav-link");
+
+  navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+  function closeMenu() {
+    console.log('nav link clicked')
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  }
+})
+
+
 console.log(`
 Самооценка 120/120 баллов 
 
